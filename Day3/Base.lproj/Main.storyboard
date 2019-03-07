@@ -91,6 +91,10 @@
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="051932027a3ec0178368263b75cc2097d195fe-wm.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DEx-YN-oiP">
+                                <rect key="frame" x="51" y="151" width="275" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,4 +106,7 @@
             <point key="canvasLocation" x="821.60000000000002" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="051932027a3ec0178368263b75cc2097d195fe-wm.jpg" width="640" height="920"/>
+    </resources>
 </document>
