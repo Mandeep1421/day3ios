@@ -46,7 +46,7 @@ class LoginViewController: UIViewController {
             
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let next = sb.instantiateViewController(withIdentifier: "1") as! HomeViewController
-            
+            next.userEmail = textemail.text
             //self.present(next, animated: true)
             self.navigationController?.pushViewController(next, animated: true)
         }

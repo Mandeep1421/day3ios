@@ -9,10 +9,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    var userEmail:String?
+    @IBOutlet weak var lblUserEmail: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let  e =  userEmail
+        {
+            self.lblUserEmail.text = e
+        }
         // Do any additional setup after loading the view.
     }
     
