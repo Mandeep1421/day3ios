@@ -20,20 +20,39 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+   {
+        // get the new view controller using segue.destination.
+        // Pass the selected object to the new view ccontroller.
+    //moving to next screen
     
+    
+    
+    }
     
     @IBAction func loginButton(_ sender: UIButton) {
-        if(textemail.text == "m@gmail.com" && textpassword.text == "Akshay@12")
+        //for checking the username and password
+        if(textemail.text == "m@a.com" && textpassword.text == "123")
         {
-           
-                let sb = UIStoryboard(name: "Main", bundle: nil)
-                let next = sb.instantiateViewController(withIdentifier: "1") as! HomeViewController
-                
-                self.present(next, animated: true)
+           print("Login Success!!!")
             
+        if(swremember.isOn)
+        {
+            print("write code to remember")
+            }
+        else{
+            print("remove the code")
+            }
+            
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let next = sb.instantiateViewController(withIdentifier: "1") as! HomeViewController
+            
+            //self.present(next, animated: true)
+            self.navigationController?.pushViewController(next, animated: true)
         }
         else
         {
+            //displaying the alert
             let alert = UIAlertController(title: "Invalid", message: "Invalid Username or password!!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
