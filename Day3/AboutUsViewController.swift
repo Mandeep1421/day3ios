@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  AboutUsViewController.swift
 //  Day3
 //
 //  Created by MacStudent on 2019-03-06.
@@ -8,22 +8,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
-    var userEmail:String?
-    @IBOutlet weak var lblUserEmail: UILabel!
+class AboutUsViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let  e =  userEmail
-        {
-            self.lblUserEmail.text = e
-        }
-        
-        // to hide back button
-            self.navigationItem.hidesBackButton = true
-           self.navigationController?.hidesBarsOnTap = true
-           self.navigationController?.navigationBar.backgroundColor = UIColor.blue
         // Do any additional setup after loading the view.
     }
     

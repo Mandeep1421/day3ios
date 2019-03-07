@@ -16,6 +16,7 @@
 		9B4A64FE22308B0B00088AD2 /* Day3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A64FD22308B0B00088AD2 /* Day3UITests.swift */; };
 		9B4A650E22308E4600088AD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A650D22308E4600088AD2 /* HomeViewController.swift */; };
 		9B4A6510223096CE00088AD2 /* 051932027a3ec0178368263b75cc2097d195fe-wm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A650F223096CE00088AD2 /* 051932027a3ec0178368263b75cc2097d195fe-wm.jpg */; };
+		9B4A651222309FE600088AD2 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A651122309FE600088AD2 /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9B4A64FF22308B0B00088AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4A650D22308E4600088AD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9B4A650F223096CE00088AD2 /* 051932027a3ec0178368263b75cc2097d195fe-wm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "051932027a3ec0178368263b75cc2097d195fe-wm.jpg"; sourceTree = "<group>"; };
+		9B4A651122309FE600088AD2 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9B4A64E622308B0A00088AD2 /* LaunchScreen.storyboard */,
 				9B4A64E922308B0A00088AD2 /* Info.plist */,
 				9B4A650D22308E4600088AD2 /* HomeViewController.swift */,
+				9B4A651122309FE600088AD2 /* AboutUsViewController.swift */,
 			);
 			path = Day3;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4A651222309FE600088AD2 /* AboutUsViewController.swift in Sources */,
 				9B4A64E022308B0900088AD2 /* LoginViewController.swift in Sources */,
 				9B4A64DE22308B0900088AD2 /* AppDelegate.swift in Sources */,
 				9B4A650E22308E4600088AD2 /* HomeViewController.swift in Sources */,
