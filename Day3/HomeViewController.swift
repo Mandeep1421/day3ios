@@ -25,9 +25,30 @@ class HomeViewController: UIViewController {
            self.navigationController?.hidesBarsOnTap = true
            self.navigationController?.navigationBar.backgroundColor = UIColor.blue
         // Do any additional setup after loading the view.
+        let userDefault = UserDefaults.standard
+       if let email = userDefault.string(forKey: "userEmail")
+       {
+        print(email)
+        }
+       if let pass = userDefault.string(forKey: "userPassword")
+       {
+       print(pass)
     }
     
-
+        func btnway(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "MovetoAboutUs", sender: nil)
+    }
+        func prepare(for segue: UIStoryboardSegue, sender: Any?)
+        {
+            if segue.identifier == "MoveToAboutUs"
+            {
+                if let destinationVC = segue.destination as? AboutUsViewController
+                {
+                    destinationVC.x = 1_000
+                }
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -38,4 +59,7 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+}
+}
 }

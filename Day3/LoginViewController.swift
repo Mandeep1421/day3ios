@@ -22,6 +22,10 @@ class LoginViewController: UIViewController {
 
    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
    {
+    let sb = UIStoryboard(name: "Main", bundle: nil)
+    let next = sb.instantiateViewController(withIdentifier: "1") as! HomeViewController
+    
+    self.present(next, animated: true)
         // get the new view controller using segue.destination.
         // Pass the selected object to the new view ccontroller.
     //moving to next screen
@@ -32,16 +36,27 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: UIButton) {
         //for checking the username and password
-        if(textemail.text == "m@a.com" && textpassword.text == "123")
+        let email = textemail.text
+        let pwd = textpassword.text
+        
+
+        if(email == "a@a.com" && pwd == "123")
         {
            print("Login Success!!!")
             
+            let userDefault = UserDefaults.standard
+            
         if(swremember.isOn)
         {
-            print("write code to remember")
-            }
+           
+            userDefault.set(email, forKey: "userEmail")
+            userDefault.set(pwd, forKey: "userPassword")
+            
+            
+        }
         else{
-            print("remove the code")
+            userDefault.removeObject(forKey: "userEmail")
+            userDefault.removeObject(forKey: "userPassword")
             }
             
             let sb = UIStoryboard(name: "Main", bundle: nil)

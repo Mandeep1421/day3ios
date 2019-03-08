@@ -10,8 +10,16 @@ import UIKit
 
 class AboutUsViewController: UIViewController {
 
+    
+     var x:Int?
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
+            
+            if let i = x
+            {
+                print(i)
+            }
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -27,4 +35,4 @@ class AboutUsViewController: UIViewController {
     }
     */
 
-}
+
