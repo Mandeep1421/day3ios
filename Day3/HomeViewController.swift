@@ -8,11 +8,13 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController
+{
     
     var userEmail:String?
     @IBOutlet weak var lblUserEmail: UILabel!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         if let  e =  userEmail
@@ -34,11 +36,13 @@ class HomeViewController: UIViewController {
        {
        print(pass)
     }
+    }
     
-        func btnway(_ sender: UIButton) {
+      @IBAction  func btnway(_ sender: UIButton)
+        {
         self.performSegue(withIdentifier: "MovetoAboutUs", sender: nil)
     }
-        func prepare(for segue: UIStoryboardSegue, sender: Any?)
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?)
         {
             if segue.identifier == "MoveToAboutUs"
             {
@@ -47,19 +51,7 @@ class HomeViewController: UIViewController {
                     destinationVC.x = 1_000
                 }
     
-    
-    
-    /*
-    // MARK: - Navigation
+            }
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-}
-}
 }

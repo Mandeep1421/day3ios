@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B1CFBB52231F14000FED63B /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CFBB42231F14000FED63B /* download.jpeg */; };
-		9B1CFBB72231F14700FED63B /* download (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CFBB62231F14700FED63B /* download (1).jpeg */; };
-		9B1CFBB92231F15400FED63B /* download (2).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CFBB82231F15400FED63B /* download (2).jpeg */; };
-		9B1CFBBB2231F15A00FED63B /* download (3).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CFBBA2231F15A00FED63B /* download (3).jpeg */; };
+		9B1CFBB52231F14000FED63B /* cat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CFBB42231F14000FED63B /* cat.jpeg */; };
+		9B1CFBB72231F14700FED63B /* panda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CFBB62231F14700FED63B /* panda.jpeg */; };
+		9B1CFBB92231F15400FED63B /* lion.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CFBB82231F15400FED63B /* lion.jpeg */; };
+		9B1CFBBB2231F15A00FED63B /* jiraf.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CFBBA2231F15A00FED63B /* jiraf.jpeg */; };
 		9B4A64DE22308B0900088AD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A64DD22308B0900088AD2 /* AppDelegate.swift */; };
 		9B4A64E022308B0900088AD2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A64DF22308B0900088AD2 /* LoginViewController.swift */; };
 		9B4A64E322308B0900088AD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A64E122308B0900088AD2 /* Main.storyboard */; };
@@ -41,10 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B1CFBB42231F14000FED63B /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
-		9B1CFBB62231F14700FED63B /* download (1).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (1).jpeg"; sourceTree = "<group>"; };
-		9B1CFBB82231F15400FED63B /* download (2).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (2).jpeg"; sourceTree = "<group>"; };
-		9B1CFBBA2231F15A00FED63B /* download (3).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (3).jpeg"; sourceTree = "<group>"; };
+		9B1CFBB42231F14000FED63B /* cat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpeg; sourceTree = "<group>"; };
+		9B1CFBB62231F14700FED63B /* panda.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panda.jpeg; sourceTree = "<group>"; };
+		9B1CFBB82231F15400FED63B /* lion.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion.jpeg; sourceTree = "<group>"; };
+		9B1CFBBA2231F15A00FED63B /* jiraf.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jiraf.jpeg; sourceTree = "<group>"; };
 		9B4A64DA22308B0900088AD2 /* Day3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4A64DD22308B0900088AD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B4A64DF22308B0900088AD2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -91,10 +91,10 @@
 		9B1CFBB32231F0F800FED63B /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				9B1CFBB42231F14000FED63B /* download.jpeg */,
-				9B1CFBB62231F14700FED63B /* download (1).jpeg */,
-				9B1CFBB82231F15400FED63B /* download (2).jpeg */,
-				9B1CFBBA2231F15A00FED63B /* download (3).jpeg */,
+				9B1CFBB42231F14000FED63B /* cat.jpeg */,
+				9B1CFBB62231F14700FED63B /* panda.jpeg */,
+				9B1CFBB82231F15400FED63B /* lion.jpeg */,
+				9B1CFBBA2231F15A00FED63B /* jiraf.jpeg */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -259,13 +259,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B4A64E822308B0A00088AD2 /* LaunchScreen.storyboard in Resources */,
-				9B1CFBBB2231F15A00FED63B /* download (3).jpeg in Resources */,
+				9B1CFBBB2231F15A00FED63B /* jiraf.jpeg in Resources */,
 				9B4A64E522308B0A00088AD2 /* Assets.xcassets in Resources */,
-				9B1CFBB52231F14000FED63B /* download.jpeg in Resources */,
-				9B1CFBB92231F15400FED63B /* download (2).jpeg in Resources */,
+				9B1CFBB52231F14000FED63B /* cat.jpeg in Resources */,
+				9B1CFBB92231F15400FED63B /* lion.jpeg in Resources */,
 				9B4A6510223096CE00088AD2 /* 051932027a3ec0178368263b75cc2097d195fe-wm.jpg in Resources */,
 				9B4A64E322308B0900088AD2 /* Main.storyboard in Resources */,
-				9B1CFBB72231F14700FED63B /* download (1).jpeg in Resources */,
+				9B1CFBB72231F14700FED63B /* panda.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

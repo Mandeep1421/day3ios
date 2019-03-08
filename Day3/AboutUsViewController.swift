@@ -10,8 +10,10 @@ import UIKit
 
 class AboutUsViewController: UIViewController {
 
-    
-     var x:Int?
+    @IBOutlet weak var lblAnimalName: UILabel!
+    @IBOutlet weak var segmentAnimal: UISegmentedControl!
+    @IBOutlet weak var imgAnimal: UIImageView!
+    var x:Int?
     override func viewDidLoad() {
     super.viewDidLoad()
             
@@ -19,8 +21,34 @@ class AboutUsViewController: UIViewController {
             {
                 print(i)
             }
-        }
+        segmentAnimal.insertSegment(withTitle: "Monkey", at: 3, animated: true)
 
+        }
+    @IBAction func segmentAnimalChanges(_ sender: UISegmentedControl)
+    {
+        print(sender.selectedSegmentIndex)
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            lblAnimalName.text = "Cat"
+            imgAnimal.image = UIImage(named: "cat.jpeg")
+
+        case 1:
+            lblAnimalName.text = "Lion"
+            imgAnimal.image = UIImage(named: "lion.jpeg")
+
+        case 2:
+            lblAnimalName.text = "Tiger"
+            imgAnimal.image = UIImage(named: "panda.jpeg")
+
+        case 3:
+            lblAnimalName.text  = "I am dynamic Jiraf"
+            imgAnimal.image = UIImage(named: "jiraf.jpeg")
+    
+        default:
+            break
+        }
+    }
         // Do any additional setup after loading the view.
     }
     

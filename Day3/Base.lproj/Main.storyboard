@@ -128,7 +128,7 @@
         <!--About Us-->
         <scene sceneID="4l2-xw-zJk">
             <objects>
-                <viewController title="About Us" id="AuD-zq-i8E" sceneMemberID="viewController">
+                <viewController title="About Us" id="AuD-zq-i8E" customClass="AboutUsViewController" customModule="Day3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vpb-sh-ljV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,15 +141,30 @@
                                     <segment title="Second"/>
                                     <segment title="Third"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentAnimalChanges:" destination="AuD-zq-i8E" eventType="valueChanged" id="2U3-YL-WaT"/>
+                                </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ixJ-Bs-IN1">
                                 <rect key="frame" x="51" y="184" width="240" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgB-mL-sVa">
+                                <rect key="frame" x="150" y="128" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RrW-BP-ST7"/>
                     </view>
+                    <connections>
+                        <outlet property="imgAnimal" destination="ixJ-Bs-IN1" id="lyH-6w-Ggm"/>
+                        <outlet property="lblAnimalName" destination="vgB-mL-sVa" id="INg-AZ-fQm"/>
+                        <outlet property="segmentAnimal" destination="oaq-dn-D7M" id="cbH-ij-ofj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kef-nj-FYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
