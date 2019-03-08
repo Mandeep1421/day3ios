@@ -17,6 +17,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var swremember: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userDefault = UserDefaults.standard
+        if let email = userDefault.string(forKey: "userEmail")
+        {
+            textemail.text = email
+            swremember.isOn = true
+            
+        }
+        if let pass = userDefault.string(forKey: "userPassword")
+        {
+            textpassword.text = pass
+            swremember.isOn = true
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 

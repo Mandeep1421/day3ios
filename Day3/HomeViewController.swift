@@ -40,7 +40,7 @@ class HomeViewController: UIViewController
     
       @IBAction  func btnway(_ sender: UIButton)
         {
-        self.performSegue(withIdentifier: "MovetoAboutUs", sender: nil)
+       // self.performSegue(withIdentifier: "MovetoAboutUs", sender: nil)
     }
        override func prepare(for segue: UIStoryboardSegue, sender: Any?)
         {

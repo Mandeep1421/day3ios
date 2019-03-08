@@ -11,6 +11,8 @@ import UIKit
 class AboutUsViewController: UIViewController {
 
     @IBOutlet weak var lblAnimalName: UILabel!
+    
+    @IBOutlet weak var lblslider: UILabel!
     @IBOutlet weak var segmentAnimal: UISegmentedControl!
     @IBOutlet weak var imgAnimal: UIImageView!
     var x:Int?
@@ -49,6 +51,13 @@ class AboutUsViewController: UIViewController {
             break
         }
     }
+    
+    @IBAction func slider(_ sender: UISlider)
+    {
+        lblslider.text = String(Int(sender.value))
+    }
+    
+    
         // Do any additional setup after loading the view.
     }
     
